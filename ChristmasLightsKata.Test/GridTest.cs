@@ -4,9 +4,9 @@ using System.Collections.Generic;
 
 namespace ChristmasLightsKata.Test
 {
-    public class Tests
+    public class GridTests
     {
-        Grid _christmasGrid;
+        GridBase _christmasGrid;
 
         [SetUp]
         public void Setup()

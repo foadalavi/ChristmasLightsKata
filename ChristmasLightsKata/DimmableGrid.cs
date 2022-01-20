@@ -1,15 +1,14 @@
 ﻿using ChristmasLightsKata.Model;
-using System;
 
 namespace ChristmasLightsKata
 {
-    public class Grid : GridBase
+    public class DimmableGrid : GridBase
     {
-        public Grid() : this(0, 0)
+        public DimmableGrid() : this(0, 0)
         {
         }
 
-        public Grid(int width, int heigth):base(width, heigth)
+        public DimmableGrid(int width, int heigth) : base(width, heigth)
         {
         }
 
@@ -19,7 +18,7 @@ namespace ChristmasLightsKata
             {
                 for (int y = 0; y < _height; y++)
                 {
-                    _grid[x, y] = new Light();
+                    _grid[x, y] = new DimmableLight();
                 }
             }
         }
