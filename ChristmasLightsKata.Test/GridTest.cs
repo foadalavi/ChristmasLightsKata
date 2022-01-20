@@ -16,5 +16,14 @@ namespace ChristmasLightsKata.Test
         {
             Assert.Pass();
         }
+
+        [TestCase(0, 0, 0)]
+        [TestCase(1, 5, 6)]
+        [TestCase(10, 20, 30)]
+        public void ParameterizedTestExample(int number1, int number2, int expectedResult)
+        {
+            var result = (number1 + number2);
+            Assert.AreEqual(expectedResult, result);
+        }
     }
 }
